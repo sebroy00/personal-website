@@ -51,6 +51,10 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 23px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -64,11 +68,8 @@ a:hover {
 .wrap {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 1rem;
   align-items: stretch;
-}
-
-.content {
-  flex: 1;
 }
 
 .header {
@@ -76,20 +77,35 @@ a:hover {
   flex-direction: row;
 }
 
+.header > .title {
+  flex: 1;
+}
+
 .header > .title > h1 {
   padding-right: 1.7rem;
 }
 
 .header > .menu {
-  margin-left: auto;
   align-self: center;
   display: flex;
   flex-direction: row;
 }
 
-.header > .menu > h2 {
+.header > .menu > h3 {
   padding-left: 1rem;
-  border: none;
+}
+
+.header > .menu > h3:first-child {
+  padding-left: 0;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header > .menu {
+    align-self: initial;
+  }
 }
 
 p {
