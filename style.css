@@ -30,6 +30,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "fira-mono";
+  src: url("assets/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
+    url("assets/fonts/fira-mono-v9-latin-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: loraregular, Georgia, Times, "Times New Roman", serif;
 }
@@ -39,11 +47,10 @@ h2,
 h3,
 h4 {
   font-family: istok_webregular, Georgia, Times, "Times New Roman", serif;
-  display: inline-block;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 33px;
   border-bottom: 5px solid #b4e5bf;
 }
 
@@ -52,12 +59,18 @@ h2 {
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 21px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration-color: #b4e5bf;
+  text-decoration-thickness: 0.12rem;
 }
 
 a:hover {
@@ -83,6 +96,11 @@ a:hover {
 
 .header > .title > h1 {
   padding-right: 1.7rem;
+  display: inline-block;
+}
+
+.header > .title > h1 > a {
+  text-decoration: none;
 }
 
 .header > .menu {
@@ -93,6 +111,7 @@ a:hover {
 
 .header > .menu > h3 {
   padding-left: 1rem;
+  margin: 0;
 }
 
 .header > .menu > h3:first-child {
@@ -108,10 +127,26 @@ a:hover {
   }
 }
 
-p {
-  max-width: 740px;
-  font-size: 20px;
-  line-height: 1.7;
+div.content {
+  max-width: 800px;
+}
+
+div.post {
+  padding: 0 0 .5rem 0;
+}
+
+code {
+  font-family: 'fira-mono';
+  background-color: #f0f0f0;
+  border-radius: 0.3rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  padding: 0.2rem;
+}
+
+code.block {
+  padding: 1rem;
+  display: block;
 }
 
 p.update {
