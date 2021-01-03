@@ -127,8 +127,18 @@ a:hover {
   }
 }
 
+h2.post-title{
+  margin-bottom:0;
+}
+
+p.post-subtitle {
+  font-family: 'fira-mono';
+  margin: 0;
+  font-size: 17px;
+}
+
 div.content {
-  max-width: 800px;
+  max-width: 770px;
 }
 
 div.post {
@@ -149,12 +159,6 @@ code.block {
   display: block;
 }
 
-p.update {
-  display: inline-block;
-  border-top: 3px solid #b4e5bf;
-  padding-right: 1rem;
-}
-
 footer > p {
-  font-size: 15px;
+  font-size: 14px;
 }
