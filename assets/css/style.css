@@ -1,39 +1,39 @@
 @font-face {
   font-family: "lorabold";
-  src: url("assets/fonts/lora-bold-webfont.woff2") format("woff2"),
-    url("assets/fonts/lora-bold-webfont.woff") format("woff");
+  src: url("../fonts/lora-bold-webfont.woff2") format("woff2"),
+    url("../fonts/lora-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "loraregular";
-  src: url("assets/fonts/lora-regular-webfont.woff2") format("woff2"),
-    url("assets/fonts/lora-regular-webfont.woff") format("woff");
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"),
+    url("../fonts/lora-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "istok_webbold";
-  src: url("assets/fonts/istokweb-bold-webfont.woff2") format("woff2"),
-    url("assets/fonts/istokweb-bold-webfont.woff") format("woff");
+  src: url("../fonts/istokweb-bold-webfont.woff2") format("woff2"),
+    url("../fonts/istokweb-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "istok_webregular";
-  src: url("assets/fonts/istokweb-regular-webfont.woff2") format("woff2"),
-    url("assets/fonts/istokweb-regular-webfont.woff") format("woff");
+  src: url("../fonts/istokweb-regular-webfont.woff2") format("woff2"),
+    url("../fonts/istokweb-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "fira-mono";
-  src: url("assets/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
-    url("assets/fonts/fira-mono-v9-latin-regular.woff") format("woff");
+  src: url("../fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/fira-mono-v9-latin-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,16 +50,20 @@ h4 {
 }
 
 h1 {
-  font-size: 33px;
-  border-bottom: 5px solid #b4e5bf;
+  font-size: 2.4375em;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 1.6042em;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 1.2292em;
+}
+
+h2,
+h3>a {
+  text-decoration: none;
 }
 
 p {
@@ -90,31 +94,32 @@ a:hover {
   flex-direction: row;
 }
 
-.header > .title {
+.header>.title {
   flex: 1;
 }
 
-.header > .title > h1 {
-  padding-right: 1.7rem;
+.header>.title>h3 {
+  border-bottom: 0.3rem solid #b4e5bf;
+  padding-right: 0.7rem;
   display: inline-block;
 }
 
-.header > .title > h1 > a {
+.header>.title>h3>a {
   text-decoration: none;
 }
 
-.header > .menu {
+.header>.menu {
   align-self: center;
   display: flex;
   flex-direction: row;
 }
 
-.header > .menu > h3 {
+.header>.menu>h3 {
   padding-left: 1rem;
   margin: 0;
 }
 
-.header > .menu > h3:first-child {
+.header>.menu>h3:first-child {
   padding-left: 0;
 }
 
@@ -122,12 +127,13 @@ a:hover {
   .header {
     flex-direction: column;
   }
-  .header > .menu {
+
+  .header>.menu {
     align-self: initial;
   }
 }
 
-h2.post-title { 
+.post-title {
   margin-bottom: 0;
 }
 
@@ -145,13 +151,18 @@ div.post {
   padding: 0 0 .5rem 0;
 }
 
+.highlight {
+  padding: 0.1rem 1rem;
+  background: #f0f0f0;
+  border-radius: 0.3rem;
+  width: 100%;
+  margin: 0;
+}
+
 code {
   font-family: 'fira-mono';
-  background-color: #f0f0f0;
-  border-radius: 0.3rem;
+  background: #f0f0f0;
   line-height: 1.5;
-  white-space: nowrap;
-  padding: 0.2rem;
 }
 
 code.block {
@@ -159,6 +170,6 @@ code.block {
   display: block;
 }
 
-footer > p {
+footer>p {
   font-size: 14px;
 }
