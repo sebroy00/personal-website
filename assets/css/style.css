@@ -115,22 +115,13 @@ a:hover {
 }
 
 .header>.menu>h3 {
+  padding-bottom: 0.3rem;
   padding-left: 1rem;
   margin: 0;
 }
 
 .header>.menu>h3:first-child {
   padding-left: 0;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .header>.menu {
-    align-self: initial;
-  }
 }
 
 .post-title {
