@@ -39,6 +39,9 @@
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0 0.7rem;
   font-family: loraregular, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -83,9 +86,13 @@ a:hover {
 }
 
 .wrap {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem;
   align-items: stretch;
 }
 
@@ -161,6 +168,13 @@ code.block {
   display: block;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 footer>p {
-  font-size: 14px;
+  font-family: 'fira-mono';
+  font-size: 12px;
 }
