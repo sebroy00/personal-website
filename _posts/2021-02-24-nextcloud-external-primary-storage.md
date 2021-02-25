@@ -10,7 +10,7 @@ While setting up my self-hosted NextCloud instance on a Raspberry Pi, I wasn't a
 
 <!--more-->
 
-The first thing you need to do is ensure that it uses a linux compatible file system. That is a requirement because the folder needs to be given permissions to read and write as www-data user. Using the [ext4](https://wiki.archlinux.org/index.php/ext4) filesystem fits that requirement.
+The first thing you need to do is ensure that it uses a linux compatible file system. That is a requirement because the folder needs to be given permissions to read and write as www-data user. Using the [ext4](https://wiki.archlinux.org/index.php/ext4) filesystem on the external drive will help fulfill that requirement.
 
 ### Repartition and format your external drive
 
