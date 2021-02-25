@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2292em;
+  font-size: 1.4292em;
 }
 
 h2,
@@ -69,7 +69,8 @@ h3>a {
   text-decoration: none;
 }
 
-p {
+p,
+li {
   font-size: 20px;
   line-height: 1.5;
 }
@@ -131,6 +132,19 @@ a:hover {
   padding-left: 0;
 }
 
+.post {
+  margin-bottom: 3rem;
+}
+
+hr {
+  margin-left: 0;
+  width: 17%;
+  height: 0.3rem;
+  border: 0 none;
+  background-color: #b4e5bf;
+  color: #b4e5bf;
+}
+
 .post-title {
   margin-bottom: 0;
 }
@@ -157,6 +171,15 @@ div.post {
   margin: 0;
 }
 
+pre.highlight {
+  padding: 0;
+}
+
+.highlighter-rouge {
+  font-size: 16px;
+  padding: 0.1rem 0.2rem;
+}
+
 code {
   font-family: 'fira-mono';
   background: #f0f0f0;
@@ -166,6 +189,12 @@ code {
 code.block {
   padding: 1rem;
   display: block;
+}
+
+blockquote {
+  /* margin-left: 0; */
+  border-left: 0.2rem #b4e5bf solid;
+  padding: 0 0.5rem;
 }
 
 footer {
