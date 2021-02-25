@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using external storage as primary storage for NextCloud"
+title:  "Using External Storage as Primary Storage for NextCloud"
 date: February 24th, 2021
 categories: technical
 excerpt_separator: <!--more-->
